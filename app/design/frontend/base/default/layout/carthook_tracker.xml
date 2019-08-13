@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+    <carthook_tracker_tracking>
+        <reference name="head">
+            <block type="carthook_tracker/tracking" name="carthook_tracking" before="-">
+                <action method="setTemplate" ifconfig="checkout/carthook_tracker/enabled"><template>carthook_tracker/tracking.phtml</template></action>
+            </block>
+        </reference>
+    </carthook_tracker_tracking>
+
+    <carthook_tracker_conversion>
+        <reference name="head">
+            <block type="carthook_tracker/tracking" name="carthook_tracking" before="-">
+                <action method="setTemplate" ifconfig="checkout/carthook_tracker/enabled"><template>carthook_tracker/conversion.phtml</template></action>
+            </block>
+        </reference>
+    </carthook_tracker_conversion>
+
+    <customer_account_login>
+        <update handle="carthook_tracker_tracking"/>
+    </customer_account_login>
+
+    <customer_account_create>
+        <update handle="carthook_tracker_tracking"/>
+    </customer_account_create>
+
+    <checkout_cart_index>
+        <update handle="carthook_tracker_tracking"/>
+    </checkout_cart_index>
+
+    <checkout_onepage_index>
+        <update handle="carthook_tracker_tracking"/>
+    </checkout_onepage_index>
+
+    <onestepcheckout_index_index>
+        <update handle="carthook_tracker_tracking"/>
+    </onestepcheckout_index_index>
+
+    <checkout_multishipping_addresses>
+        <update handle="carthook_tracker_tracking"/>
+    </checkout_multishipping_addresses>
+
+    <checkout_onepage_success>
+        <update handle="carthook_tracker_conversion"/>
+    </checkout_onepage_success>
+
+    <checkout_multishipping_success>
+        <update handle="carthook_tracker_conversion"/>
+    </checkout_multishipping_success>
+
+</layout>

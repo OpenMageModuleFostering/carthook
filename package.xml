@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>CartHook</name>
+    <version>1.4.1</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/licenses/gpl.html">GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>CartHook Tracker : Stable Build</summary>
+    <description>This is the stable release of the Carthook Tracker.</description>
+    <notes>This is a stable build.</notes>
+    <authors><author><name>CartHook</name><user>charlesgallant</user><email>charles@carthook.com</email></author></authors>
+    <date>2015-09-25</date>
+    <time>07:45:15</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="CartHook_Tracker.xml" hash="1f1329bcaaac3c58ca1b2ad01da7d343"/></dir></target><target name="magecommunity"><dir name="CartHook"><dir name="Tracker"><dir name="Block"><dir name="Adminhtml"><file name="Notification.php" hash="2a1a1811b46da7f6cb2bd57a1337157a"/></dir><file name="Tracking.php" hash="20843e3d8b98ec834de718e973dc7cae"/></dir><dir name="Helper"><file name="Data.php" hash="34fd110b56c7cb3b4889de2c71573c12"/></dir><dir name="Model"><file name="Notification.php" hash="9cccb46c40ec2d7fc4d2f06824ebee82"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="CarthookController.php" hash="f68762e816eb78cd54c5405599a837d2"/></dir><file name="CartController.php" hash="c747fa3dea1a1859810bebda41968172"/></dir><dir name="etc"><file name="config.xml" hash="102c2a97f7237fcd035f032ae661de68"/><file name="system.xml" hash="8bc47f3faa09a014c04b3f279bd92cdc"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="carthook_tracker.xml" hash="10208a756e5cd8c352ef32128c17e11f"/></dir><dir name="template"><dir name="carthook_tracker"><file name="notification.phtml" hash="2e359359d36f7fa7a0f937f30b8fdbe2"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="carthook_tracker.xml" hash="46d6e1ae476d906ceb75d19df124e83c"/></dir><dir name="template"><dir name="carthook_tracker"><file name="conversion.phtml" hash="a7d50c3b43e4b835af570a5d394ef9f7"/><file name="tracking.phtml" hash="fbd48f027bf2c58a65466e05b547c3ed"/></dir></dir></dir></dir></dir></target><target name="magelocale"><dir name="en_US"><file name="CartHook_Tracker.csv" hash="751d1b04c7b5481fffc5983230f9ff9e"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

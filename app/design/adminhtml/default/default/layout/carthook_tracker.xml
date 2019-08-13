@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+
+    <default>
+        <reference name="notifications">
+            <block type="carthook_tracker/adminhtml_notification" name="notification_carthook" template="carthook_tracker/notification.phtml"></block>
+        </reference>
+    </default>
+
+</layout>

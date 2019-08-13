@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/CartHook",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "CartHook Tracker : Stable Build",
+    "authors": [
+    {
+        "name": "CartHook",
+        "email": "charles@carthook.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,23 @@
+<?php
+/**
+ * @see CartHook_Tracker_Block_Adminhtml_Notification
+ */
+?>
+<?php if ($this->canShow()): ?>
+<script type="text/javascript">
+    function denyCartHookNotification() {
+        new Ajax.Request('<?php echo $this->getUrl('*/carthook/denyNotification', array('_current' => true)); ?>', {
+            method: 'post',
+            onComplete: function(transport) {
+                if (200 == transport.status) {
+                    if ($('carthook_notification'))
+                        $('carthook_notification').remove();
+                }
+            }
+        });
+    }
+</script>
+<div id="carthook_notification" class="notification-global notification-global-notice">
+    <strong>CartHook:</strong> <?php echo $this->helper('carthook_tracker')->__('It looks like your checkout functionality have been overridden by some extension. If so, there is a chance that CartHook will not work. Please contact us.') ?> <a href="mailto:admin@carthook.com">admin@carthook.com</a>. <a href="#" onclick="denyCartHookNotification(); return false;"><?php echo $this->helper('carthook_tracker')->__('Remove this notification') ?></a>
+</div>
+<?php endif; ?>

@@ -1,0 +1,15 @@
+<?php
+/* @var $this CartHook_Tracker_Block_Tracking */
+?>
+<?php //if (Mage::helper('checkout/cart')->getCart()->getSummaryQty()):?>
+<script type='text/javascript'>
+    var crthk_setup = '<?php echo $this->helper('carthook_tracker')->getCartHookMerchantId() ?>';
+    var crthk_cart  = <?php echo $this->getCartDataAsJson() ?>;
+    
+    (function() {
+        var ch = document.createElement('script'); ch.type='text/javascript'; ch.async=true;
+        ch.src = '//api.carthook.com/api/js/';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(ch, x);
+    })();
+</script>
+<?php //endif ?>
